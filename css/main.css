@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100vh;
+}
+.megapromocao{
+    height: inherit;
+    background-image: url('../imgs/bg.svg');
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+.box{
+    background: white;
+    text-align: left;
+    float: right;
+    width: 380px;
+    height: auto;
+    margin-top: 60px;
+    margin-right: 80px;
+}
+.slogan{
+    padding:20px;
+    margin-top:9px;
+    width: inherit;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 17pt;  
+    text-align: center;  
+    color: white; 
+}
+.assinar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(30, 30, 67);
+    border-radius: 10px;
+}
+.assinar input{
+    margin-top: 20px;
+    display:inline-block;
+    min-width: 90%;
+    max-width: 90%;
+    padding: 10px 2px;
+    min-height: 50px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+.assinar input[type="submit"]{
+   background-color: rgb(19, 194, 19);
+   margin-top: 30px;
+   margin-bottom: 30px;
+   vertical-align:bottom;
+   color: white;
+   font-weight: bold;
+   border: none;
+  cursor: pointer;
+}
+.title{
+    text-align: center;
+    font-size:30pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight:light;
+    color: rgb(12, 53, 39);
+}
+.ofertas{
+    position: relative;
+    bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+.livros{
+    height: auto;
+    width: 250px;
+    background-color: white;
+}
+.livros img{
+    height: 250px;
+    width: inherit;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px 1px rgba(186, 175, 174, 0.193);
+}
+.preco{
+    width: inherit;   
+}
+.livros .backvalue{
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: line-through;
+    font-size: 12pt;
+}
+.livros .precoatual{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14pt;
+}
+ @media  screen and  (max-width: 750px){
+     .ofertas{
+         justify-content: space-evenly;
+     }
+     .box{
+         float: none;
+     }
+     .megapromocao{
+        justify-content: center;
+     }
+     
+ }
+
+
